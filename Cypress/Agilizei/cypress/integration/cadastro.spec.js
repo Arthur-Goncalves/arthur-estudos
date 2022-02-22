@@ -26,12 +26,14 @@ context('Cadastro', () => {
         cy.get('select#yearbox').select('1992');
         cy.get('select[ng-model^=month]').select('February');
         cy.get('select#daybox').select('21');
-        cy.get('input#firstpassword').type('Agilizei@2020');
-        cy.get('input#secondpassword').type('Agilizei@2020');
+        cy.get('input#firstpassword').type('Agilizei@2022');
+        cy.get('input#secondpassword').type('Agilizei@2022');
 
+        // attachFile -> Input file
         cy.get('input#imagesrc').attachFile('Capture.PNG');
-        cy.pause;
-        
+       
+        // Click
+        cy.get('button#submitbtn').click();
         
     });
 });
