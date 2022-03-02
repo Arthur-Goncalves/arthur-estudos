@@ -1,0 +1,35 @@
+{
+    "signup": {
+        "name": "Arthur Gonçalves",
+        "cpf": "00000014141",
+        "email": "teste@teste.com",
+        "whatsapp": "11999999999",
+        "address": {
+            "postalcode": "25960090",
+            "street": "Rua Gonçalo de Castro",
+            "number": "20",
+            "details": "Bloco 5, Ap 105",
+            "district": "Alto",
+            "city_state": "Teresópolis/RJ"
+        },
+        "delivery_method": "Moto",
+        "cnh": "cnh-digital.jpg.jpg"
+    },
+    "cpf_inv": {
+        "name": "João Lucas",
+        "cpf": "x00000141AA",
+        "email": "joaoteste@teste.com",
+        "whatsapp": "11999999999",
+        "address": {
+            "postalcode": "25960090",
+            "street": "Rua Gonçalo de Castro",
+            "number": "20",
+            "details": "Bloco 5, Ap 105",
+            "district": "Alto",
+            "city_state": "Teresópolis/RJ"
+        },
+        "delivery_method": "Moto",
+        "cnh": "cnh-digital.jpg.jpg"
+    }
+
+}
