@@ -21,7 +21,8 @@ describe('Cadastro', () => {
                 bairro: 'Alto',
                 cidade_uf: 'Teresópolis/RJ'
             },
-            metodo_entrega: 'Moto'
+            metodo_entrega: 'Moto',
+            cnh: 'cnh-digital.jpg.jpg'
         }
 
         cy.get('input[name="name"]').type(entregador.nome)
@@ -40,6 +41,10 @@ describe('Cadastro', () => {
         cy.get('input[name="city-uf"]').should('have.value', entregador.endereco.cidade_uf)
 
         cy.contains('.delivery-method li', entregador.metodo_entrega).click()
+
+        // Upload de arquivo para teste
+
+
 
       
 
