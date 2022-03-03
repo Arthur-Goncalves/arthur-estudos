@@ -30,6 +30,22 @@
         },
         "delivery_method": "Moto",
         "cnh": "cnh-digital.jpg.jpg"
+    },
+    "email_inv": {
+        "name": "Arthur Gonçalves",
+        "cpf": "00000014141",
+        "email": "teste.com.br",
+        "whatsapp": "11999999999",
+        "address": {
+            "postalcode": "25960090",
+            "street": "Rua Gonçalo de Castro",
+            "number": "20",
+            "details": "Bloco 5, Ap 105",
+            "district": "Alto",
+            "city_state": "Teresópolis/RJ"
+        },
+        "delivery_method": "Moto",
+        "cnh": "cnh-digital.jpg.jpg"
     }
 
 }
