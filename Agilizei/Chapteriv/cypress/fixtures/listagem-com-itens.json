@@ -1,0 +1,31 @@
+[
+    {
+        "firstName": "Arthur",
+        "lastName": "Gonçalves",
+        "adress": "Sem endereço",
+        "emailAdress": "arthurteste@mail.com",
+        "radioGender": "m",
+        "checks": [
+            "Netflix",
+            "Dormir"
+        ],
+        "selectCountries": "Nova Zelandia",
+        "selectYears": "2002",
+        "selectMonths": "Fevereiro",
+        "pwd": "Agilizei@22"
+    },
+    {
+        "firstName": "Claysson",
+        "lastName": "Gonçalves",
+        "adress": "Sem endereço n2",
+        "emailAdress": "clayssonteste@mail.com",
+        "radioGender": "m",
+        "checks": [
+            "Dormir"
+        ],
+        "selectCountries": "Hong kong",
+        "selectYears": "2008",
+        "selectMonths": "Abril",
+        "pwd": "Agilizei@22"
+    }
+]
