@@ -1,0 +1,9 @@
+{
+    "user": {
+        "email": "chaptervart123@mail.com",
+        "username": "chaptervarth3211",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNoYXB0ZXJ2YXJ0MTIzQG1haWwuY29tIiwidXNlcm5hbWUiOiJjaGFwdGVydmFydGgxMjMiLCJiaW8iOm51bGwsImltYWdlIjoiaHR0cHM6Ly9hcGkucmVhbHdvcmxkLmlvL2ltYWdlcy9zbWlsZXktY3lydXMuanBlZyIsImlhdCI6MTY0NjkyODc3OSwiZXhwIjoxNjUyMTEyNzc5fQ.Lk9CYazb2yDGjDn_4p1ivHNrKk3KojYj0yN24W5VZI8"
+    }
+}
