@@ -2,25 +2,10 @@
 
 describe('Articles', () => {
 
-    // HOOK -> São trechos que deven ser executados antes ou depois dos testes
+    // HOOK -> São trechos que devem ser executados antes ou depois dos testes
     beforeEach(() => {
-        cy.request({
-            method: 'POST',
-            url: 'https://api.realworld.io/api/users/login',
-            body: {
-                "user": {
-                    "email": "chaptervart@mail.com",
-                    "password": "123456"
-                }
-            }
-        }).then(response => {
-            // console.log(response)
-            // JSON Path -> Navegação através de um json
-            console.log(response.body.user.token)
-
-            window.localStorage.setItem('jwtToken', response.body.user.token)
-        })
-
+        
+        cy.login()
         cy.visit('/')
     });
 

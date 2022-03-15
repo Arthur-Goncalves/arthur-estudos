@@ -23,3 +23,27 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('login', () => {
+    cy.token().then(response => {
+        // console.log(response)
+        // JSON Path -> Navegação através de um json
+        console.log(response.body.user.token)
+
+        window.localStorage.setItem('jwtToken', response.body.user.token)
+    })
+})
+
+Cypress.Commands.add('token', () => {
+    cy.request({
+        method: 'POST',
+        url: 'https://api.realworld.io/api/users/login',
+        body: {
+            "user": {
+                "email": "chaptervart@mail.com",
+                "password": "123456"
+            }
+        }
+    })
+})
+
