@@ -1,35 +1,30 @@
 /// <reference types="cypress" />
 
+import articles from '../support/pages/articles'
+
 describe('Articles', () => {
 
     // HOOK -> São trechos que devem ser executados antes ou depois dos testes
     beforeEach(() => {
         
+        // Arrange
         cy.login()
         cy.visit('/')
     });
 
     it('Cadastro de novo artigo com sucesso', () => {
 
-        // Fluxo de login
-        // cy.visit('login')
-        // cy.get('[placeholder="Email"]').type('chaptervart@mail.com')
-        // cy.get('[placeholder="Password"]').type('123456')
-        // cy.contains('button', 'Sign in').click()
+        // acesso ao form
+        articles.acessarOFormulario()
 
-        const articleName = 'Artigo de testes' + new Date().getTime()
+        // preencher o formulário
+        articles.preencherFormulario()
+        
+        // submeter o formuário
+        articles.submeterFormulario()
 
-        // Fluxo de criação do artigo
-        cy.get('[href*="#/editor/"]').click()
-        cy.get('[ng-model$=title]').type(articleName) // Atributo que termine "$" com a palavra title
-        cy.get('[ng-model$=description]').type('Artigos de testes Curso Agilizei')
-        cy.get('[ng-model$=body]').type('Corpo do texto do artigo que está sendo criado no curso Agilizei')
-        cy.get('[ng-model$=tagField]').type('CypressAgilizei')
-
-        cy.contains('button', 'Publish Article').click()
-        cy.contains(articleName).should('be.visible')
-        cy.get('h1').should('have.text', articleName)
-
+        // verificar se o artigo foi criado 
+        articles.verificarArtigoCriado()
 
     });
 });
